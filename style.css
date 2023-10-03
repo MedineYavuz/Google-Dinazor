@@ -1,0 +1,65 @@
+*{
+ 
+    padding: 0;
+}
+.oyun{
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    border: 3px solid black;
+    margin-top: 50px;
+}
+#dinazor{
+    width: 70px;
+    height: 70px;
+    background-image: url(/pngegg.png);
+    background-size: 70px 70px;
+    position: relative;
+    top: 240px;
+}
+/* zıplama yapısı kazandırmak için */
+ .jump{
+    animation: jump 0.25s linear;
+ }
+
+ @keyframes jump{
+    0%{
+        top: 230px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 230px;
+    }
+ }
+
+ #kaktus{
+    width: 25px;
+    height: 70px;
+    position: relative;
+    top: 160px;
+    left: 600px;
+
+
+    background-image: url(/kaktus.png);
+    background-size: 25px 70px;
+
+    animation: engel 1s infinite linear;
+    
+ }
+
+ @keyframes engel{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: -30px;
+    }
+ }
